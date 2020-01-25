@@ -8,13 +8,10 @@
 #ifndef UTF_H
 #define UTF_H
 
-#ifdef HAVE_CONFIG_H
-#include <jansson_private_config.h>
-#endif
-
-#include <stddef.h>
 #ifdef HAVE_STDINT_H
-#include <stdint.h>
+#   include <stdint.h>
+#else
+#   include <inttypes.h>
 #endif
 
 int utf8_encode(int32_t codepoint, char *buffer, size_t *size);

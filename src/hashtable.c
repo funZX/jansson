@@ -5,15 +5,13 @@
  * it under the terms of the MIT license. See LICENSE for details.
  */
 
-#if HAVE_CONFIG_H
-#include <jansson_private_config.h>
-#endif
-
 #include <stdlib.h>
 #include <string.h>
 
-#if HAVE_STDINT_H
-#include <stdint.h>
+#ifdef HAVE_STDINT_H
+#	include <stdint.h>
+#else
+#	include <inttypes.h>
 #endif
 
 #include "hashtable.h"

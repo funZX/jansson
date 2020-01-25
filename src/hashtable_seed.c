@@ -2,15 +2,13 @@
    the hash function.
 */
 
-#ifdef HAVE_CONFIG_H
-#include <jansson_private_config.h>
-#endif
-
 #include <stdio.h>
 #include <time.h>
 
 #ifdef HAVE_STDINT_H
 #include <stdint.h>
+#else
+#include <inttypes.h>
 #endif
 
 #ifdef HAVE_FCNTL_H
