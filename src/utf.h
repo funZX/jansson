@@ -8,11 +8,7 @@
 #ifndef UTF_H
 #define UTF_H
 
-#ifdef HAVE_STDINT_H
-#   include <stdint.h>
-#else
-#   include <inttypes.h>
-#endif
+#include <stdint.h>
 
 int utf8_encode(int32_t codepoint, char *buffer, size_t *size);
 

@@ -7,12 +7,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-
-#ifdef HAVE_STDINT_H
-#	include <stdint.h>
-#else
-#	include <inttypes.h>
-#endif
+#include <stdint.h>
 
 #include "hashtable.h"
 #include "jansson_private.h" /* for container_of() */

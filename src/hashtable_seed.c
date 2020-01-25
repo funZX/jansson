@@ -4,12 +4,7 @@
 
 #include <stdio.h>
 #include <time.h>
-
-#ifdef HAVE_STDINT_H
 #include <stdint.h>
-#else
-#include <inttypes.h>
-#endif
 
 #ifdef HAVE_FCNTL_H
 #include <fcntl.h>

@@ -9,18 +9,12 @@
 #define _GNU_SOURCE
 #endif
 
-#ifdef HAVE_CONFIG_H
-#include <jansson_private_config.h>
-#endif
-
 #include <math.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 
-#ifdef HAVE_STDINT_H
 #include <stdint.h>
-#endif
 
 #include "hashtable.h"
 #include "jansson.h"
